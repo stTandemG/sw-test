@@ -15,7 +15,7 @@ root.render(
 const registerServiceWorker = async () => {
     if ('serviceWorker' in navigator) {
         try {
-            const registration = await navigator.serviceWorker.register('/sw-test/sw.js', {
+            const registration = await navigator.serviceWorker.register('/sw-test/service-worker.js', {
                 scope: '/sw-test/'
             });
             if (registration.installing) {
